@@ -13,16 +13,6 @@ class _TodoscreenState extends State<Todoscreen> {
   List todo = [
     ['Learn flutter', false],
     ['Drink water', false],
-    ['Learn flutter', false],
-    ['Drink water', false],
-    ['Learn flutter', false],
-    ['Drink water', false],
-    ['Learn flutter', false],
-    ['Drink water', false],
-    ['Learn flutter', false],
-    ['Drink water', false],
-    ['Learn flutter', false],
-    ['Drink water', false],
   ];
   void checkboxchanged(int index) {
     setState(() {
@@ -76,7 +66,9 @@ class _TodoscreenState extends State<Todoscreen> {
         children: [
           Expanded(
             child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20),
+              padding: const EdgeInsets.symmetric(
+                horizontal: 25,
+              ),
               child: TextField(
                 controller: _controller,
                 style: const TextStyle(color: Colors.white),
